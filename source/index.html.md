@@ -1,10 +1,7 @@
 ---
-title: API Reference
+title: Taker API Documentations
 
 language_tabs: # must be one of https://git.io/vQNgJ
-  - shell
-  - ruby
-  - python
   - javascript
   - php
   
@@ -19,5 +16,5 @@ code_clipboard: true
 
 meta:
   - name: description
-    content: Documentation for the Kittn API
+    content: Taker API Documentations
 ---

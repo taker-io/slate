@@ -4,6 +4,8 @@
 
 The Public API is a tool that allows to integrate with Taker Go and helps make food delivery a fast and comfy for restaurants and end users.The diagram of communication Taker go with the restaurant business and DSP shown below.
 
+![Block Schema 1](/images/block-schema-1.png "Block Schema 1")
+
 ## 2 - Base Urls
 
 - Production API Base URL: <a href="https://production.go.taker.io/" target="_blank">https://production.go.taker.io/</a>
