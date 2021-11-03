@@ -1,6 +1,6 @@
-# TAKER GO Integration guidePublic API
+# TAKER GO Integration guide Public API
 
-## 1 - Introduction
+## 1 - TAKER GO Integration guide Public API Introduction
 
 The Public API is a tool that allows to integrate with Taker Go and helps make food delivery a fast and comfy for restaurants and end users.The diagram of communication Taker go with the restaurant business and DSP shown below.
 
@@ -15,15 +15,15 @@ The Public API is a tool that allows to integrate with Taker Go and helps make f
 
 Developer Applications and Sandbox accounts are created by Taker Go team after obtaining some needed information from the developerThe needed information include the following:
 
-### 3.1 - Your App Redirect URL
+## 3.1 - Your App Redirect URL
 
 This is the URL to which you want Taker Go user to be redirected after successfully authorizing your App.You need to provide a direct link for your production application, not a link to the local host for your Sandbox application.
 
-### 3.2 - Your App Webhook URL & Webhook Events
+## 3.2 - Your App Webhook URL & Webhook Events
 
-When changing the order status, we expect a Webhook from the DSP (for more information, see section 7.4).
+When changing the order status, we expect a Webhook from the DSP (for more information, see section 8.4).
 
-### 3.3 - Your App Install URL and Token
+## 3.3 - Your App Install URL and Token
 
 To register your application, we need to get an url-address and Token from you.The authorization processis alwaysinitiated from your App sideWhen your App gets officially listed in Taker Go Marketplace, Taker Go user will be able to install your App directly from the marketplaceWhen user clicks on install, user will be taken to the Install URL that you will use to know that a Taker Go user wants to install your Taker Go AppFrom there, you should initiate the authorization process with Taker Go authorization server
 
@@ -47,9 +47,7 @@ If the request is not executed, the API returns Error -422 (E-422)
 }
 ```
 
-## 6 - Statuses
-
-### 6.1 - Order Status
+## 6 - Order Status
 
 The list of order statuses
 
@@ -69,7 +67,7 @@ const STATUSES = [
     'NOT_SENT'         => 34
 ];
 ```
-### 6.2 - Payment Types from Taker Go
+## 7 - Payment Types from Taker Go
 
 You can make order in the mobile application, on the website, by phone number or order at a kiosk and pay for the order as follows:
 
@@ -82,7 +80,7 @@ const PAYMENT_TYPE = [
 ];
 ```
 
-## 7 - Work with external API
+## 8 - Work with external API
 
 `DSP_URL` - Installed from the side of the Taker.
 
@@ -92,7 +90,7 @@ const PAYMENT_TYPE = [
 
 `id` – Taker Go Order ID.
 
-### 7.1 - Public Create Order (in DSP)
+## 8.1 - Public Create Order (in DSP)
 
 The request for a Public Create Order (in DSP) must contain the following data:
 
@@ -151,16 +149,16 @@ The request for a Public Create Order (in DSP) must contain the following data:
 
 Expected “Status Code” - `200`
 
-> Body
+> Expected Response Body
 
 ```json
 {
-  "dsp_order_id", // DSP order ID
-  string, "status": STATUSES
+  "dsp_order_id":  string, // DSP order ID
+  "status": STATUSES
 }
 ```
 
-### 7.2 - Public Get Order (in DSP)
+## 8.2 - Public Get Order (in DSP)
 
 The request for a Public GetOrder (in DSP) must contain the following data:
 
@@ -185,6 +183,8 @@ The request for a Public GetOrder (in DSP) must contain the following data:
 
 Expected “Status Code” - `200`
 
+> Expected Response Body
+
 ```json
 {
   "dsp_order_id", string,
@@ -199,7 +199,7 @@ Expected “Status Code” - `200`
 }
 ```
 
-### 7.3 - Public Delete Order (in DSP)
+## 8.3 - Public Delete Order (in DSP)
 
 The request for a Public DeleteOrder (in DSP) must contain the following data:
 
@@ -223,11 +223,13 @@ The request for a Public DeleteOrder (in DSP) must contain the following data:
 
 Expected “Status Code” - `200`
 
+> Expected Response Body
+
 ```json
 {}
 ```
 
-### 7.4 - Expected Webhook (from DSP)
+## 8.4 - Expected Webhook (from DSP)
 
 The request for Expected Webhook (from DSP)must contain the following data:
 
@@ -264,6 +266,8 @@ The request for Expected Webhook (from DSP)must contain the following data:
 
 Expected “Status Code” - `200`
 
+> Expected Response Body
+
 ```json
 {}
 ```
@@ -273,6 +277,8 @@ Expected “Status Code” - `200`
 **Expected Response**
 
 Expected “Status Code” - `422`
+
+> Expected Response Body
 
 ```json
 {}
