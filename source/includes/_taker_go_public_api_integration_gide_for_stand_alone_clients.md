@@ -1,6 +1,6 @@
-# TAKER GO Integration guide Public API for Standalone clients
+# TakerGo Integration guide Public API for Standalone clients
 
-## 1 - TAKER GO Integration guide Public API for Standalone clients Introduction
+## 1 - TakerGo Integration guide Public API for Standalone clients Introduction
 
 The Public API is a tool that allows to integrate with TakerGo service and helps make fooddelivery a fast and comfy for restaurants and end users. The diagram of communicationTakerGo with the restaurant which is not Taker client shown below.
 

@@ -1,6 +1,6 @@
-# TAKER GO Integration guide Public API
+# TakerGo Integration guide Public API
 
-## 1 - TAKER GO Integration guide Public API Introduction
+## 1 - TakerGo Integration guide Public API Introduction
 
 The Public API is a tool that allows to integrate with Taker Go and helps make food delivery a fast and comfy for restaurants and end users.The diagram of communication Taker go with the restaurant business and DSP shown below.
 
