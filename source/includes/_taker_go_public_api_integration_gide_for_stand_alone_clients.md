@@ -1,6 +1,6 @@
-# TakerGo Integration guide Public API for Standalone clients
+# Restaurant Integration Guide
 
-## 1 - TakerGo Integration guide Public API for Standalone clients Introduction
+## 1 - Restaurant Introduction
 
 The Public API is a tool that allows to integrate with TakerGo service and helps make fooddelivery a fast and comfy for restaurants and end users. The diagram of communicationTakerGo with the restaurant which is not Taker client shown below.
 
@@ -100,7 +100,7 @@ List of API endpoints
 }
 ```
 
-> Body (New Format)
+> Body
 
 ```json
 {
@@ -151,56 +151,6 @@ List of API endpoints
     "name": string, 
     "phone_number": string (ex:"+966555633706") 
   }
-}
-```
-
-> Body (Old Format)
-
-```json
-{ 
-  "profile_id": int, 
-  "organization_id": int,
-  "organization_order_id": int, 
-  "order_key": string, 
-  "branch": { 
-    "id": int, 
-    "name": string, 
-    "phone": string, (ex: "+966538098059"),
-    "name_ar": string
-  }, 
-  "delivery_details": { 
-    "building_name": string, 
-    "area": string, 
-    "coordinate": { 
-      "latitude": float, 
-      "longitude": float
-    }, 
-    "street": string, 
-    "city": string
-  }, 
-  "pickup_details": { 
-    "building_name": string, 
-    "area": string, 
-    "coordinate": { 
-      "latitude":float, 
-      "longitude": float
-    }, 
-    "street": string, 
-    "city": string
-  },
-  "customer": { 
-    "name": string,
-    "phone_number": string, (ex: "+966538098059") 
-  }, 
-  "payment_type": string, (ex: "online","cash", "terminal"),
-  "currency": string, (ex: "SAR"),
-  "notes": string, 
-  "notes_ar": string,
-  "restaurant_name": string,
-  "restaurant_mobile": string, (ex: "+966538098059"),
-  "restaurant_logo": url, 
-  "total": 50, 
-  "customer_id": int
 }
 ```
 
@@ -414,7 +364,3 @@ Driver acceptance timeout field (the time for driver searching in each DSP)
 **Order details interface**:
 
 ![Order Details](/images/order-details.png "Order Details")
-
-## 10 - Dispatching rules API
-
-<a href="https://taker.atlassian.net/wiki/spaces/TS/pages/746848301/TakerGo+-+APIs+new#Config-APIs" target="_blank">https://taker.atlassian.net/wiki/spaces/TS/pages/746848301/TakerGo+-+APIs+new#Config-APIs</a>

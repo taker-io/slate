@@ -1,6 +1,6 @@
-# TakerGo Integration guide Public API
+# DSP Integration Guide
 
-## 1 - TakerGo Integration guide Public API Introduction
+## 1 - DSP Introduction
 
 The Public API is a tool that allows to integrate with Taker Go and helps make food delivery a fast and comfy for restaurants and end users.The diagram of communication Taker go with the restaurant business and DSP shown below.
 
@@ -15,15 +15,15 @@ The Public API is a tool that allows to integrate with Taker Go and helps make f
 
 Developer Applications and Sandbox accounts are created by Taker Go team after obtaining some needed information from the developerThe needed information include the following:
 
-## 3.1 - Your App Redirect URL
+## 3.1 - Redirect URL
 
 This is the URL to which you want Taker Go user to be redirected after successfully authorizing your App.You need to provide a direct link for your production application, not a link to the local host for your Sandbox application.
 
-## 3.2 - Your App Webhook URL & Webhook Events
+## 3.2 - Webhook URL & Webhook Events
 
 When changing the order status, we expect a Webhook from the DSP (for more information, see section 8.4).
 
-## 3.3 - Your App Install URL and Token
+## 3.3 - Install URL and Token
 
 To register your application, we need to get an url-address and Token from you.The authorization processis alwaysinitiated from your App sideWhen your App gets officially listed in Taker Go Marketplace, Taker Go user will be able to install your App directly from the marketplaceWhen user clicks on install, user will be taken to the Install URL that you will use to know that a Taker Go user wants to install your Taker Go AppFrom there, you should initiate the authorization process with Taker Go authorization server
 
